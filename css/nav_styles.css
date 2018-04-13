@@ -1,0 +1,79 @@
+li {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	margin-right: 7vw;
+
+	width: 5vw;
+	height: 5vw;
+	cursor: pointer;
+}
+
+ul {
+	padding: 0;
+}
+
+#tour_nav {
+  display: none;
+  width: 100vw;
+  height: 20vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+
+  background-color: #F8F9F9;
+  color: #EAECEE;
+  overflow: visible;
+}
+
+#tour {
+  position: absolute;
+  bottom: 1vw;
+  left: 39.5vw;
+  font-size: 10px;
+  color: #4D5656;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+}
+
+#smallName {
+  position: absolute;
+  top: 1vw;
+  left: 40.5vw;
+  font-size: 10px;
+  color: #4D5656;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+}
+
+.line {
+  bottom: 7vw;
+  border-bottom: 3px solid #4D5656;
+  height: 4vw;
+}
+
+#line {
+  position: absolute;
+  top: 5vw;
+  width: 69vw;
+  left: 15.5vw;
+}
+
+#rightLine {
+  position: absolute;
+  top: 0;  
+  width: 15vw;
+  right: 14vw;
+} 
+
+.centered_nav_elements {
+	position: absolute;
+	top: 7vw;
+	left: 15vw;
+	width: auto;
+	height: 3vh;
+	margin: 0 auto;
+	margin-bottom: 1vh;
+}

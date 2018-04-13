@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+          margin: 0;
+        }
+
+       #map {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="pinned"></div>
+    <script>
+      
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          disableDefaultUI: true,
+          center: {lat: 38.620685, lng:  -90.239143},
+          zoom: 12,
+          scrollwheel:  false,
+        });
+
+        var compton = new google.maps.Marker({
+          position: {lat: 38.615895, lng:  -90.238897},
+          map: map
+        });
+
+        var footnote = new google.maps.Marker({
+          position: {lat: 38.631749, lng:  -90.185176},
+          map: map
+        });
+
+        var apotheosis = new google.maps.Marker({
+          position: {lat: 38.639865, lng:  -90.294091},
+          map: map
+        });
+
+        var bus = new google.maps.Marker({
+          position: {lat: 38.633812, lng:  -90.200530},
+          map: map
+        });
+
+        var treemonisha = new google.maps.Marker({
+          position: {lat: 38.613679, lng:  -90.209871},
+          map: map
+        });
+
+        var arch = new google.maps.Marker({
+          position: {lat: 38.624884, lng:  -90.184787},
+          map: map
+        });
+
+      }
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVMuLOcUbaLvpC4EscAKiVIKk6vWzET8E&callback=initMap">
+    </script>
+  </body>
+</html>

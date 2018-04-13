@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+	  <title>(Don't) Look Up</title>
+	  <meta charset = "UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script>
+		$(document).ready(function(){
+		  // Add smooth scrolling to all links
+		  $("a").on('click', function(event) {
+
+		    if (this.hash !== "") {
+		      // Prevent default anchor click behavior
+		      event.preventDefault();
+
+		      // Store hash
+		      var hash = this.hash;
+
+		      $('html, body').animate({
+		        scrollTop: $(hash).offset().top
+		      }, 600, function(){
+		   
+		        // Add hash (#) to URL when done scrolling (default click behavior)
+		        window.location.hash = hash;
+		      });
+		    } // End if
+		  });
+		});
+	</script>
+
+	</head>
+
+	<body>
+		<div class="navbar">
+			<img src="icons/logo.png" class="logo">
+			<a href="tour_three.html"><img src="icons/left_caret_white.png" id="leftArrow"></i></a>
+			<a href="tour_two.html"><img src="icons/right_caret_white.png" id="rightArrow"></i></a>
+			<a href="index.html"><img src="icons/x_white.png" class="x"></a>
+		</div>
+	
+ 		<h1> (Don't) Look Up </h1>
+ 		<h3> <i class="fas fa-map-marker-alt pin"></i> 6 stops | <img src="icons/car.svg" class="car"> 23.2 miles</i></h3>
+
+		<a href="#body_text" class="scroll_button"> Scroll</a>
+
+ 		<div id="body_text"></div>
+		<div class="tour_overview">
+			<p class="welcome_text animation-element fadeIn"> From a 179-foot tower to the Gateway to the West, we will take you to some of the tallest public artworks in the city. </p>
+		</div>
+
+		<div class="grey_box">
+			<div class="title_container">
+				<h4 class="animation-element fadeIn">What You Will See</h4>
+			</div>
+
+			<div class="tour slider animation-element bounce-up">
+				 <div><img src="img/tour_one/slider_img/tower.jpg" class="slider_image"></div>
+				 <div><img src="img/tour_one/slider_img/footnote.jpg" class="slider_image"></div>
+				 <div><img src="img/tour_one/slider_img/bus.jpg" class="slider_image"></div>
+				 <div><img src="img/tour_one/slider_img/arch.jpg" class="slider_image"></div>
+				 <div><img src="img/tour_one/slider_img/treemonisha.jpg" class="slider_image"></div>
+				 <div><img src="img/tour_one/slider_img/apotheosis.jpg" class="slider_image"></div>
+			</div>
+		</div>
+
+		<div class="bottom_container">
+			<div class="title_container">
+				<h4 class="animation-element fadeIn"> Where You Will Go </h4>
+			</div>
+			<iframe src="maps/tour_one/dlu_pinned_map.html" class="iso_map animation-element bounce-up"></iframe>
+			<div class="start_button animation-element fadeIn"><a href="compton_hill.html">Start Tour</a></div>
+		</div>
+
+	  	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="slick/slick.min.js"></script>
+		<script type="text/javascript" src="scripts/slick.js"></script>		
+		<script type="text/javascript" src="scripts/scripts.js"></script>		
+
+	</body>
+</html>
+

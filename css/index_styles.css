@@ -1,0 +1,173 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #4D5656;
+	background-color: #F8F9F9;
+
+	max-width: 414px;
+	min-width: 320px;
+	margin: 0;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 100;
+}
+
+a {
+	text-decoration: none;
+	color: #4D5656;
+}
+
+.welcome {
+	width: 100vw;
+	height: 100vh;
+	background-color: #F8F9F9;
+	background-image: url("home.jpg");
+	background-size: 100vw 100vh;
+	background-repeat: no-repeat;
+	animation: shrinkDiv 3s linear;
+	animation-delay: 8s;
+	overflow: hidden;
+}
+
+@keyframes shrinkDiv {
+	0%   { height: 100vh; }
+	100% { height: 0vh); }
+}
+
+#welcome_icon {
+	width: 40vw;
+	height: 40vw;
+	margin: 0 auto;
+	
+	position: absolute;
+	left: 30vw;
+	top: 38.75vh;
+
+	animation: fadein 6s;
+}
+
+#intro_icon {
+	width: 15vw;
+	height: 15vw;
+
+	margin-top: 30vh;
+}
+
+.introduction {
+	color: white;l
+
+	width: 100vw;
+	height: 100vh;
+
+	position: relative;
+	margin-top: 0;
+
+	text-align: center;
+}
+
+@keyframes fadein {
+	0%   { filter: opacity(0); }
+	100% { filter: opacity(1); }
+}
+
+@keyframes slowFadein {
+	0%   { filter: opacity(0); }
+	50%  { filter: opacity(0); }
+	100% { filter: opacity(1); }
+}
+
+.intro_text {
+	color: #4D5656;
+	width: 84vw;
+
+	position: absolute;
+	top: 40vh;
+	margin-left: 30px;
+
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 27px;
+
+	animation: fadein 3s;
+}
+
+.button {
+	font-size: 12px;
+	text-align: center;
+
+	padding-bottom: 8px;
+	
+	border-bottom: 2px solid #4D5656;
+	position: absolute;
+	left: 50%;
+	bottom: 2vh;
+	transform: translate(-50%, -50%);
+
+	animation: slowFadein 3s;
+}
+
+#tourpreview_container {
+	margin-top: 2.5vh;
+	margin-bottom: 2.5vh;
+}
+.tour {
+	width: 90vw;
+	height: 30vh;
+
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2.5vh;
+	position: relative;
+    text-align: center;
+    color: white;
+}
+
+.display_text {
+	width: 94vw;
+
+	position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.display_image {
+	width: 90vw;
+	height: 30vh;
+	margin-left: auto;
+	margin-right: auto;
+
+	filter: brightness(85%) grayscale(100%);
+}
+
+.display_animated {
+	transition: all 3s ease;
+	transform: scale(2);
+}
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+
+.animation-element.fadeIn {
+  opacity: 0;
+}
+
+.animation-element.fadeIn.in-view {
+  animation: fadeIn 3s;
+  opacity: 1;
+}

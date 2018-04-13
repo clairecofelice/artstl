@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+	<head>
+	  <title>(Don't) Look Up | The Gateway Arch </title>
+	  <meta charset = "UTF-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1"/> 
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700,700i" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	  <link rel="stylesheet" type="text/css" href="css/tour_styles.css">
+	  <link rel="stylesheet" type="text/css" href="css/nav_styles3.css">
+	  <script src="scripts/modernizr.min.js"></script>
+	</head>
+
+	<body>
+		<a href="tour_one.html" class="exit"><img src="icons/x_white.png" class="exit_icon"></i></a>
+		<div class="directions_button" onclick="document.getElementById('modal1').style.display='block'">Directions</a></div>
+		<iframe src="maps/tour_one/arch_map.html" class="iso_map"></iframe>
+	
+		<div id="modal1" class="modal animate-opacity" onclick="document.getElementById('modal1').style.display='none'">
+	    	<div class="modal-content">
+				<a href="https://www.google.com/maps/dir/?api=1&destination=The+Gateway+Arch"> Open in Google Maps </a>
+	  	 	</div>
+	  	</div>
+	</div>
+
+		<div class="body_text">
+			<h2>Eero Saarinen</h2>
+			<h1>The Gateway Arch</h1>
+
+			<div class="intro_locations">
+				<p class="welcome_text animation-element fadeIn"> Welcome to the Compton Hill Water Tower, the newest of St. Louis' three towers.</p>
+		   	</div>
+
+
+	<div id="tour_nav">
+			<div class="line" id="line"></div>	
+			<ul class="centered_nav_elements">
+				<li><a href="compton_hill.html"><img src="icons/dot.svg"></a></li>
+				<li><a href="apotheosis.html"><img src="icons/dot.svg"></a></li>
+				<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
+				<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
+				<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
+				<li><a href="arch.html"><img src="icons/active_dot.svg"></a></li>
+			</ul>
+		
+		</div>
+
+	   		<div class="grey_box">
+	   			<div class="locations">
+					<p class="instruction_number animation-element slide-left">00</p>
+		   				<p class="tour_text lInstruction animation-element slide-left">Quick Facts</p>
+		   				<div class="quick_facts">
+							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 27' tall</p>
+							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1903</p>
+							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from bronze with a granite pedestal</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="locations">
+		   		<p class="instruction_number animation-element slide-left">01</p>
+		   		<div class="instruction_container">
+		   			<p class="tour_text lInstruction animation-element slide-left">Before you enter,</p>
+					<p class="tour_text rInstruction animation-element slide-right">walk around the tower.</p>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Built on the 36 acre Reservoir Park, it was completed in 1898 after a design by</p>
+
+					<p class="get_more_info animation-element bounce-up" onclick="moreInfo()" id="read1"> Read More <i class="fas fa-caret-down"></i> </p>
+
+					<div class="info_drawer" id="moreInfo" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Harvey Ellis at a cost of $48,000. Ellis was a nationally-known architect who designed St. Louis City Hall and the Washington Terrace Gatehouse, among many other commissions. </p>
+						<div class="img_wrapper">
+							<img src="img/tour_one/water_construction.jpg" class="img img1">
+						</div>
+						<p class="caption_text" id="caption1">The tower under scaffolding during intial construction, 1898.</p>
+						<i class="fas fa-caret-up caret" onclick="closeDrawer()"></i>
+						</br>
+					</div> 				
+				</div>
+			</div>
+
+			<div class="locations">
+		   		<p class="instruction_number animation-element slide-left">02</p>
+		   		<div class="instruction_container">
+		   			<p class="tour_text lInstruction animation-element slide-left">Approach the walls</p>
+					<p class="tour_text rInstruction animation-element slide-right">and note their texture.</p>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> The 179-foot tower is made of rusticated limestone, buff-colored brick and terra</p>
+
+					<p class="get_more_info animation-element bounce-up" onclick="moreInfo2()" id="read2"> Read More <i class="fas fa-caret-down"></i> </p>
+
+					<div class="info_drawer" id="moreInfo2" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> cotta. Its walls are adorned with carvings of mythical animals and leaf patterns. </p>
+						<i class="fas fa-caret-up caret" onclick="closeDrawer2()"></i>
+						</br>
+					</div> 				
+				</div>
+			</div>
+
+			<div class="locations">
+		   		<p class="instruction_number animation-element slide-left">03</p>
+		   		<div class="instruction_container">
+		   			<p class="tour_text lInstruction animation-element slide-left">When you're ready,</p>
+					<p class="tour_text rInstruction animation-element slide-right">make your way inside.</p>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> During the World’s Fair in 1904, as many as 5,000 people visited the tower and </p>
+
+					<p class="get_more_info animation-element bounce-up" onclick="moreInfo3()" id="read3"> Read More <i class="fas fa-caret-down"></i> </p>
+
+					<div class="info_drawer" id="moreInfo3" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> promenaded in carriages through Reservoir Park. </p>
+						<i class="fas fa-caret-up caret" onclick="closeDrawer3()"></i>
+						</br>
+					</div> 				
+				</div>
+			</div>
+
+			<div class="locations">
+		   		<p class="instruction_number animation-element slide-left">04</p>
+		   		<div class="instruction_container">
+		   			<p class="tour_text lInstruction animation-element slide-left">Take your time</p>
+					<p class="tour_text rInstruction animation-element slide-right">as you go up the stairs.</p>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Inside, spiral steps take visitors to the top of the tower where an observation</p>
+
+					<p class="get_more_info animation-element bounce-up" onclick="moreInfo4()" id="read4"> Read More <i class="fas fa-caret-down"></i> </p>
+
+					<div class="info_drawer" id="moreInfo4" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> deck under a bell-shaped roof of terra cotta tiles offers a 360-degree view of the City of St. Louis. </p>
+						<i class="fas fa-caret-up caret" onclick="closeDrawer4()"></i>
+						</br>
+					</div> 				
+				</div>
+			</div>
+
+
+			<div class="end_button animation-element fadeIn"><a href="tour_one_complete.html">Complete Tour</a></div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="scripts/scripts.js"></script>
+	</body>
+</html>
