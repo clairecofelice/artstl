@@ -1,6 +1,28 @@
 $(document).ready(function(){
     // Add smooth scrolling to all links
-    $("a").on('click', function(event) {
+    $(".button").on('click', function(event) {
+
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 900, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      } // End if
+    });
+  });
+
+$(document).ready(function(){
+    // Add smooth scrolling to all links
+    $(".scroll_button").on('click', function(event) {
 
       if (this.hash !== "") {
         // Prevent default anchor click behavior
@@ -48,7 +70,7 @@ $window.on('scroll resize', check_if_in_view);
 $window.trigger('scroll');
 
 $(document).ready(function() {
-  $(".t1").click(function() {
+  $(".s1").click(function() {
     $(".d1")
       .addClass('display_animated')
       .bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", 
@@ -58,7 +80,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".t2").click(function() {
+  $(".s2").click(function() {
     $(".d2")
       .addClass('display_animated')
       .bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", 
@@ -68,7 +90,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  $(".t3").click(function() {
+  $(".s3").click(function() {
     $(".d3")
       .addClass('display_animated')
       .bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", 

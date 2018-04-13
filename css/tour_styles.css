@@ -16,7 +16,7 @@ h1 {
   text-align: center;
 
   margin-top: 0px;
-	margin-bottom: 40px;
+  margin-bottom: 0.5vh;
 
   animation: fadeIn 3s;
 }
@@ -29,6 +29,17 @@ h2  {
 
   padding-top: 0.5vh;
   margin-bottom: 1vh;
+
+  animation: fadeIn 5s;
+}
+
+h3  {
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+
+  padding-top: 0.5vh;
+  margin-bottom: 3vh;
 
   animation: fadeIn 5s;
 }

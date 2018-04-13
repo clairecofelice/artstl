@@ -1,6 +1,6 @@
 body {
 	font-family: 'Roboto', sans-serif;
-	color: #4D5656;
+	cofr: #4D5656;
 	background-color: #F8F9F9;
 
 	max-width: 414px;
@@ -114,18 +114,27 @@ a {
 	animation: slowFadein 3s;
 }
 
-#tourpreview_container {
-	margin-top: 2.5vh;
-	margin-bottom: 2.5vh;
+.scroll_button {
+	width: 10vw;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	position: absolute;
+	padding-bottom: 8px;
+	left: 45vw;
+	bottom: 2vh;
+	border-bottom: 2px solid white;
+
+	animation: fadein 10s;
 }
+
 .tour {
-	width: 90vw;
-	height: 30vh;
+	width: 80vw;
+	height: 80vw;
+	margin: 0 auto;
+	margin-bottom: 2.5vh;
 
 	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 2.5vh;
 	position: relative;
     text-align: center;
     color: white;
@@ -141,14 +150,13 @@ a {
     z-index: 100;
     
     font-size: 24px;
+   	line-height: 28px;
     font-weight: 400;
 }
 
 .display_image {
-	width: 90vw;
-	height: 30vh;
-	margin-left: auto;
-	margin-right: auto;
+	width: 150vw;
+	height: 80vw;
 
 	filter: brightness(85%) grayscale(100%);
 }
@@ -158,16 +166,12 @@ a {
 	transform: scale(2);
 }
 
-.animation-element {
-  opacity: 0;
-  position: relative;
-}
-
-.animation-element.fadeIn {
-  opacity: 0;
-}
-
-.animation-element.fadeIn.in-view {
-  animation: fadeIn 3s;
-  opacity: 1;
+.square {
+	position: absolute;
+	left: 7.8vw;
+	top: 4.5vh;
+	width: 60vw;
+	height: 60vw;
+	border: 8px solid white;
+	z-index: 10000;
 }

@@ -197,16 +197,6 @@ button {
 	left: 45vw;
 	bottom: 2vh;
 	border-bottom: 2px solid white;
-	animation: upDown 0.5s infinite;
-}
-
-@keyframes upDown {
-  0%, 100% {
-    bottom: 2vh;
-  }
-  50% {
-    bottom: 2.2vh;
-  }
 }
 
 iframe {
@@ -492,11 +482,42 @@ iframe {
   border-radius: 5px;
 }
 
+.complete_button {
+  color: #4D5656;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  position: absolute; 
+  bottom: 5vw;
+  left: 27vw;
+  z-index: 100;
+
+  padding: 1.5vw;
+
+  border: 1px solid #4D5656; 
+  border-radius: 5px;
+}
+
 .completion_box {
+	text-align: center;
+	position: relative;
 	background-color: #F8F9F9;
 	width: 70vw;
-	height: auto;
+	height: 42vh;
 	padding: 5vw;
 	margin: 0 auto;
+	margin-top: 25vh;
 	vertical-align: middle;
+}
+
+.completion_text {
+	margin-bottom: 2vh;
+}
+
+.completion_header {
+	font-family: 'Playfair Display', serif;
+	font-size: 26px;
+	font-weight: 700;
+
 }
