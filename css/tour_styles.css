@@ -397,6 +397,7 @@ a {
 .next_display_text {
 	color: white;
 
+  width: 80vw;
 	position: absolute;
   top: 40%;
   left: 50%;
@@ -523,7 +524,7 @@ a {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  width: 26vw;
+  width: 94.78px;
   z-index: 100;
 
   margin: 0 auto;

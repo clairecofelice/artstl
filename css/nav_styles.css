@@ -2,7 +2,7 @@ li {
 	position: relative;
 	display: inline-block;
 	margin: 0;
-	margin-right: 7vw;
+	margin-right: 3vw;
 
 	width: 5vw;
 	height: 5vw;
@@ -16,7 +16,7 @@ ul {
 #tour_nav {
   display: none;
   width: 100vw;
-  height: 20vw;
+  height: 9vw;
   position: fixed;
   bottom: 0;
   z-index: 1000;
@@ -56,9 +56,9 @@ ul {
 
 #line {
   position: absolute;
-  top: 5vw;
-  width: 69vw;
-  left: 15.5vw;
+  top: 0vw;
+  width: 49vw;
+  left: 24vw;
 }
 
 #rightLine {
@@ -70,8 +70,8 @@ ul {
 
 .centered_nav_elements {
 	position: absolute;
-	top: 7vw;
-	left: 15vw;
+	top: 1.5vw;
+	left: 23.5vw;
 	width: auto;
 	height: 3vh;
 	margin: 0 auto;

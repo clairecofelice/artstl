@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        body {
+          margin: 0;
+        }
+
+       #map {
+        height: 100vh;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+       }
+    </style>
+  </head>
+  <body>
+    <div id="map" class="pinned"></div>
+    <script>
+      
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          disableDefaultUI: true,
+          center: {lat: 38.620669, lng: -90.298966},
+          zoom: 11,
+          scrollwheel:  false,
+        });
+
+        var gulliver = new google.maps.Marker({
+          position: {lat: 38.569086, lng:  -90.422781},
+          map: map
+        });
+
+        var bass_band = new google.maps.Marker({
+          position: {lat: 38.6339388, lng:  -90.18386},
+          map: map
+        });
+
+        var living_flame = new google.maps.Marker({
+          position: {lat: 38.6365834, lng:  -90.2334553},
+          map: map
+        });
+
+        var vertical_loop = new google.maps.Marker({
+          position: {lat: 38.6556374, lng:  -90.3000731},
+          map: map
+        });
+      }
+    
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVMuLOcUbaLvpC4EscAKiVIKk6vWzET8E&callback=initMap">
+    </script>
+  </body>
+</html>

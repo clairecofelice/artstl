@@ -8,56 +8,71 @@
 	  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	  <link rel="stylesheet" type="text/css" href="css/tour_styles.css">
-	  <link rel="stylesheet" type="text/css" href="css/nav_styles3.css">
+	  <link rel="stylesheet" type="text/css" href="css/nav_styles.css">
+	  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 	</head>
 
 	<body>
+
+	<!--Displays when site is opened on non-mobile platform-->
+	<div class="responsive">
+		<img src="icons/logo_black.svg" id="responsive_icon">
+		<p class="responsive_text">Art STL is currently a mobile-only site. For an optimal viewing experience, please re-open the site on a smartphone.</p>
+	</div>
+
+	<div class="viewable_area">
+
+		<!--Top Navigation Elements-->
 		<a href="tour_one.html" class="exit"><img src="icons/x_white.png" class="exit_icon"></i></a>
 		<div class="directions_button" onclick="document.getElementById('modal1').style.display='block'">Directions</a></div>
 		<iframe src="maps/tour_one/apotheosis_map.html" class="iso_map"></iframe>
 	
+		<!--Open Google Maps-->
 		<div id="modal1" class="modal animate-opacity" onclick="document.getElementById('modal1').style.display='none'">
 	    	<div class="modal-content">
 				<a href="https://www.google.com/maps/dir/?api=1&destination=Apotheosis+of+Saint+Louis"> Open in Google Maps </a>
 	  	 	</div>
 	  	</div>
-	</div>
 
+		<!--Begin Body Text-->
 		<div class="body_text">
 			<h2>(Don't) Look Up</h2>
 			<h1>Apotheosis of </br> St. Louis</h1>
 			<h3>Stop 2 of 6</h3>
 
+			<!--Intro Text-->
 			<div class="intro_locations">
 				<p class="welcome_text animation-element fadeIn"> The next stop on our tour is the Apotheosis of St. Louis, one of the city's most recognizable symbols.</p>
 		   	</div>
 
+			<!--Top Navigation Bar-->
+			<div id="tour_nav">
+				<div class="line" id="line"></div>	
+				<ul class="centered_nav_elements">
+					<li><a href="compton_hill.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="apotheosis.html"><img src="icons/active_dot.svg"></a></li>
+					<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="arch.html"><img src="icons/dot.svg"></a></li>
+				</ul>
+			</div>
 
-		<div id="tour_nav">
-			<div class="line" id="line"></div>	
-			<ul class="centered_nav_elements">
-				<li><a href="compton_hill.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="apotheosis.html"><img src="icons/active_dot.svg"></a></li>
-				<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="arch.html"><img src="icons/dot.svg"></a></li>
-			</ul>
-		</div>
-
+			<!--Quick Facts-->
 	   		<div class="grey_box">
 	   			<div class="locations">
 					<p class="instruction_number animation-element slide-left">00</p>
-		   				<p class="tour_text lInstruction animation-element slide-left">Quick Facts</p>
-		   				<div class="quick_facts">
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 27' tall</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Design by Charles H Niehaus</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1903</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from bronze with a granite pedestal</p>
+		   			<p class="tour_text lInstruction animation-element slide-left">Quick Facts</p>
+	   				<div class="quick_facts">
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 27' tall</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Design by Charles H Niehaus</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1903</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from bronze with a granite pedestal</p>
 					</div>
 				</div>
 			</div>
 
+			<!--Information Box 1-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">01</p>
 		   		<div class="instruction_container">
@@ -70,8 +85,10 @@
 					<div class="info_drawer" id="moreInfo" style="display: none;">
 						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> However, the statue hasn't always stood in its iconic location. The original plaster model of the statue of the Crusader King, Louis IX of France, stood at the main entrance to the 1904 World’s Fair (where the History Museum now is located). The statue stands as a symbol of Christianity, the Crusading spirit, and the strength and vitality of the City of St. Louis.</p>
 					</div>
+				</div>
 			</div>
 
+			<!--Information Box 2-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">02</p>
 		   		<div class="instruction_container">
@@ -89,6 +106,7 @@
 				</div>
 			</div>
 
+			<!--Information Box 3-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">03</p>
 		   		<div class="instruction_container">
@@ -106,6 +124,7 @@
 				</div>
 			</div>
 
+			<!--Information Box 4-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">04</p>
 		   		<div class="instruction_container">
@@ -123,9 +142,8 @@
 				</div>
 			</div>
 
-			<p class="next_header"> Next Up </p>
-
-
+		
+		<p class="next_header"> Next Up </p>
 		<div class="next">
 			<p class = "next_display_text"> School Bus </p>
 			<img src="img/tour_one/next_stop/bus.jpg" class="next_prev" id="n2">

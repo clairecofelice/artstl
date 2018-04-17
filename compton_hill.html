@@ -8,10 +8,20 @@
 	  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
 	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	  <link rel="stylesheet" type="text/css" href="css/tour_styles.css">
-	  <link rel="stylesheet" type="text/css" href="css/nav_styles3.css">
+	  <link rel="stylesheet" type="text/css" href="css/nav_styles.css">
+	  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 	</head>
 
 	<body>
+
+	<!--Displays when site is opened on non-mobile platform-->
+	<div class="responsive">
+		<img src="icons/logo_black.svg" id="responsive_icon">
+		<p class="responsive_text">Art STL is currently a mobile-only site. For an optimal viewing experience, please re-open the site on a smartphone.</p>
+	</div>
+
+	<div class="viewable_area">
+
 		<a href="tour_one.html" class="exit"><img src="icons/x_white.png" class="exit_icon"></i></a>
 		<div class="directions_button" onclick="document.getElementById('modal1').style.display='block'">Directions</a></div>
 		<iframe src="maps/tour_one/compton_hill_map.html" class="iso_map"></iframe>
@@ -21,7 +31,6 @@
 				<a href="https://www.google.com/maps/dir/?api=1&destination=Compton+Hill+Water+Tower"> Open in Google Maps </a>
 	  	 	</div>
 	  	</div>
-	</div>
 
 		<div class="body_text">
 			<h2>(Don't) Look Up</h2>

@@ -7,13 +7,23 @@
 	  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
 	  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 	  <link rel="stylesheet" type="text/css" href="css/index_styles.css">
+	  <link rel="stylesheet" type="text/css" href="css/responsive.css">
 	</head>
 
 	<body>
+
+	<!--Displays when site is opened on non-mobile platform-->
+	<div class="responsive">
+		<img src="icons/logo_black.svg" id="responsive_icon">
+		<p class="responsive_text">Art STL is currently a mobile-only site. For an optimal viewing experience, please re-open the site on a smartphone.</p>
+	</div>
+
+	<div class="viewable_area">
 		<div class="welcome">
 			<img src="icons/logo.png" id="welcome_icon">
 			<a href="#introduction" class="scroll_button"> Scroll</a>
 		</div>
+
 		<div class="introduction" id="introduction">
 			<img src="icons/logo_black.svg" id="intro_icon">
 			<p class="intro_text">Putting local arts and culture </br> right in your hands through curated tours of public art in </br> the St. Louis area.</p>
@@ -31,16 +41,18 @@
 
 			<div class="tour tour_two">
 				<div class="square s2"></div>
-				<p class = "display_text"> Fly Me </br>to the Moon </p>
-				<img src="img/tour_two/cowgirl.jpg" class="display_image d2">
+				<p class = "display_text"> Odd </br>Company </p>
+				<img src="img/tour_two/gulliver.jpg" class="display_image d2">
 			</div>
 
 			<div class="tour tour_three">
 				<div class="square s3"></div>
-				<p class = "display_text"> Odd </br>Company </p>
-				<img src="img/tour_three/gulliver.jpg" class="display_image d3">
+				<p class = "display_text"> Fly Me </br>to the Moon </p>
+				<img src="img/tour_three/cowgirl.jpg" class="display_image d3">
 			</div>
+
 	 	</div>
+	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="scripts/index_scripts.js"></script>
