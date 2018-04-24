@@ -655,7 +655,7 @@ input {
   margin: 0;
   padding: 0;
   margin-top: 2vh;
-
+  outline-style: none;
   font-size: 12px;
   text-decoration: underline;
   font-weight: 200;
