@@ -550,6 +550,8 @@ iframe {
 }
 
 #read1 {
+  background-color: red;
+  outline: none;
   height: auto;
   overflow: hidden;
 }
@@ -653,10 +655,6 @@ input {
   font-weight: 200;
 }
 
-input[type=button] {
-  background-color: red;
-  outline: none;
-}
 
 .one_line_header {
   margin-top: 3vh;
