@@ -9,6 +9,16 @@ $(document).scroll(function () {
     }
 });
 
+//shorter smooth scroll 
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 200 && y < 1450) {
+        $('#tour_nav2').fadeIn();
+    } else {
+        $('#tour_nav2').fadeOut();
+    }
+});
+
 //scrolling animations 
 
 var $animation_elements = $('.animation-element');
@@ -142,6 +152,7 @@ $(document).ready(function(){
     $("#read1").click(function(){
         $("#moreInfo").slideToggle();
          $(this).val("Read Less");
+        document.getElementById("moreInfo").style.opacity = "1";
     });
 });
 

@@ -28,6 +28,21 @@ ul {
   text-align: center;
 }
 
+#tour_nav2 {
+  display: none;
+  width: 100vw;
+  height: 9vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 1000;
+
+  background-color: #F8F9F9;
+  color: #EAECEE;
+  overflow: visible;
+
+  text-align: center;
+}
+
 #tour {
   position: absolute;
   bottom: 1vw;

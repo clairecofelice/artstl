@@ -181,18 +181,30 @@ iframe {
   overflow: hidden;
   position: relative;
   margin-top: 5vh;
-  margin-bottom: 3vh;
-  height: 90px;
+  margin-bottom: 2vh;
+  height: 70px;
 }
 
 .lInstruction {
   font-family: 'Playfair Display', serif;
 	display: block;
+  margin-top: 0;
   margin-bottom: 15px;
-  top: 1vh;
+  top: 0;
   left: 0;
 	font-size: 23px;
 	font-weight: 700;
+}
+
+.qFacts {
+  font-family: 'Playfair Display', serif;
+  display: block;
+  margin-top: 5vh;
+  margin-bottom: 15px;
+  top: 0;
+  left: 0;
+  font-size: 23px;
+  font-weight: 700;
 }
 
 .rInstruction {
@@ -222,7 +234,7 @@ iframe {
 }
 
 .quick_facts {
-  margin-bottom: 6vh;
+  margin-bottom: 8vh;
   overflow: hidden;
 }
 
@@ -318,19 +330,12 @@ iframe {
 }
 
 .bounce-up.in-view {
-  opacity: 0.4;
+  opacity: 0.6;
   -moz-transform: translate3d(0px, 0px, 0px);
   -webkit-transform: translate3d(0px, 0px, 0px);
   -o-transform: translate(0px, 0px);
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
-}
-
-
-
-#popup {
-	font-weight: 400;
-	color: black;
 }
 
 .modal {
@@ -401,8 +406,8 @@ iframe {
   position: relative;
   margin-top: 1vh;
   bottom: 0vh;
-	font-size: 11px;
-	font-weight: 100;
+	font-size: 12px;
+	font-weight: 400;
 	line-height: 14px;
   display: none;
 }
@@ -502,8 +507,10 @@ iframe {
 
 .img {
   width: 100%; 
+  height: auto;
   opacity: 0.4;
   position: absolute;
+  top: 0;
   right: -100vw;
   margin-top: 2vh;
   margin-bottom: 1vh;
@@ -534,11 +541,16 @@ iframe {
 }
 
 .img_wrapper_short {
-  margin-top: 2vh;
     position: relative;
     overflow: hidden;
-    width: auto;
-    height: 200px; 
+    min-height: 100px;
+    max-height: 200px; 
+}
+
+.img_wrapper_medium {
+    position: relative;
+    overflow: hidden;
+    height: 230px;
 }
 
 @-webkit-keyframes slideLeft {
