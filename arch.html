@@ -26,12 +26,14 @@
 		<div class="directions_button" onclick="document.getElementById('modal1').style.display='block'">Directions</a></div>
 		<iframe src="maps/tour_one/arch_map.html" class="iso_map"></iframe>
 	
+		<!--Open Google Maps Modal-->
 		<div id="modal1" class="modal animate-opacity" onclick="document.getElementById('modal1').style.display='none'">
 	    	<div class="modal-content">
 				<a href="https://www.google.com/maps/dir/?api=1&destination=The+Gateway+Arch"> Open in Google Maps </a>
 	  	 	</div>
 	  	</div>
 
+		<!--Body Text-->
 		<div class="body_text">
 			<h2 class="one_line_header">(Don't) Look Up</h2>
 			<h1 class="one_line_header2">The Gateway Arch</h1>
@@ -42,83 +44,95 @@
 		   	</div>
 
 
-	<div id="tour_nav2">
-			<div class="line" id="line"></div>	
-			<ul class="centered_nav_elements">
-				<li><a href="compton_hill.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="apotheosis.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
-				<li class="last-dot"><a href="arch.html"><img src="icons/active_dot.svg"></a></li>
-			</ul>
-		
-		</div>
+			<!--Tour Nav Bar-->
+			<div id="tour_nav2">
+				<div class="line" id="line"></div>	
+				<ul class="centered_nav_elements">
+					<li><a href="compton_hill.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="apotheosis.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
+					<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
+					<li class="last-dot"><a href="arch.html"><img src="icons/active_dot.svg"></a></li>
+				</ul>
+			</div>
 
+
+			<!--Quick Facts-->
 	   		<div class="grey_box">
 	   			<div class="grey">
 					<p class="instruction_number animation-element slide-left">00</p>
-		   				<p class="tour_text qFacts animation-element slide-left">Quick Facts</p>
-		   				<div class="quick_facts">
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 630 feet tall</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Designed by Eero Saarinen</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1965</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from stainless steel</p>
+	   				<p class="tour_text qFacts animation-element slide-left">Quick Facts</p>
+	   				<div class="quick_facts">
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 630 feet tall</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Designed by Eero Saarinen</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1965</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from stainless steel</p>
 					</div>
 				</div>
 			</div>
 
+			<!--Information Box 1-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">01</p>
 		   		<div class="instruction_container">
 		   			<p class="tour_text lInstruction animation-element slide-left">The Arch is visible from</p>
 					<p class="tour_text rInstruction animation-element slide-right">most points downtown.</p>
 				</div>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;">Founded by the National Park Service in 1935 to commemorate Thomas</p>
 
+				<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;">Founded by the National Park Service in 1935 to commemorate Thomas</p>
 
-					<div class="info_drawer" id="moreInfo" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Jefferson’s vision of a transcontinental United States, the Gateway Arch National Park (formerly known as the “Jefferson National Expansion Memorial”) stretches from the Old Courthouse to the steps overlooking the Mississippi River. In between, the Gateway Arch rises high, a bold monument to the pioneering spirit.</p> 	
+				<div id="moreInfo" style="display: none;">
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Jefferson’s vision of a transcontinental United States, the Gateway Arch National Park (formerly known as the “Jefferson National Expansion Memorial”) stretches from the Old Courthouse to the steps overlooking the Mississippi River. In between, the Gateway Arch rises high, a bold monument to the pioneering spirit.</p> 	
 
-						<div class="img_wrapper_medium">
-							<img src="img/tour_one/arch.jpg" class="img img1">
-						</div>
-
-						<p class="caption_text" id="caption1">The Arch under construction, June 17, 1964.</p>	
+					<!--Image-->
+					<div class="img_wrapper_medium">
+						<img src="img/tour_one/arch.jpg" class="img img1">
 					</div>
-					<input type="button" class="animation-element bounce-up" id="read1" value="Read More"/>
 
-		</div>
+					<p class="caption_text" id="caption1">The Arch under construction, June 17, 1964.</p>	
+				</div>
 
+				<input type="button" class="animation-element bounce-up" id="read1" value="Read More"/>
+			</div>
+
+			<!--Information Box 2-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">02</p>
 		   		<div class="instruction_container">
 		   			<p class="tour_text lInstruction animation-element slide-left">Imagine seeing the Arch</p>
 					<p class="tour_text rInstruction animation-element slide-right">when it was first unveiled.</p>
 				</div>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Then, and today, the Gateway Arch celebrates the diverse people who shaped</p>
 
-					<div id ="moreInfo2" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;">the region and the country. The dreamer, Thomas Jefferson, negotiated the Louisiana Purchase in 1803, doubling the size of the United States. The explorers, Lewis and Clark and their Shoshone guide Sacagawea, scouted the new territory and mapped a route to the Pacific Ocean. The challengers, Dred and Harriet Scott, filed suit at the Old Courthouse for their freedom from slavery, and St. Louis suffragette Virginia Minor sued for women’s right to vote. The artist, architect Eero Saarinen, designed the monument that honors them all.</p>
-					</div> 	
-					<input type="button" class="animation-element bounce-up" id="read2" value="Read More"/>
+				<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Then, and today, the Gateway Arch celebrates the diverse people who shaped</p>
+
+				<div id ="moreInfo2" style="display: none;">
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;">the region and the country. The dreamer, Thomas Jefferson, negotiated the Louisiana Purchase in 1803, doubling the size of the United States. The explorers, Lewis and Clark and their Shoshone guide Sacagawea, scouted the new territory and mapped a route to the Pacific Ocean. The challengers, Dred and Harriet Scott, filed suit at the Old Courthouse for their freedom from slavery, and St. Louis suffragette Virginia Minor sued for women’s right to vote. The artist, architect Eero Saarinen, designed the monument that honors them all.</p>
+				</div> 	
+
+				<input type="button" class="animation-element bounce-up" id="read2" value="Read More"/>
 			</div>
 
+			<!--Information Box 3-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">03</p>
 		   		<div class="instruction_container">
 		   			<p class="tour_text lInstruction animation-element slide-left">Now, look up.</p>
 					<p class="tour_text rInstruction animation-element slide-right">Do you see it sway?</p>
 				</div>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Built in the form of a weighted catenary arch and resistant to earthquakes, the  </p>
 
-					<div id="moreInfo3" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Arch was originally described as having "the inevitable quality of the right solution." Construction of the arch itself began on February 12, 1963 with the intention of being completed by the following fall in honor of the city's bicentennial. However, safety checks, funding uncertainties, and legal disputes delayed construction, and the project was not completed until the </br>fall of '65.</p>
-					</div> 				
+				<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Built in the form of a weighted catenary arch and resistant to earthquakes, the </p>
+
+				<div id="moreInfo3" style="display: none;">
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Arch was originally described as having "the inevitable quality of the right solution." Construction of the arch itself began on February 12, 1963 with the intention of being completed by the following fall in honor of the city's bicentennial. However, safety checks, funding uncertainties, and legal disputes delayed construction, and the project was not completed until the </br>fall of '65.</p>
+				</div> 		
+
 				<input type="button" class="animation-element bounce-up" id="read3" value="Read More"/>
 			</div>
 
-			<div id="modal2" class="modal2 animate-opacity" onclick="document.getElementById('modal2').style.display='none'">
+
+			<!--Complete Tour Modal-->
+			<div id="modal2" class="modal2 animate-opacity" onclick="document.getElementById('modal2').style.display='none;'">
 		    	<div class="modal-content2">
 					<p class="completion_header animation-element slide-left">Congratulations</p>
 					<p class="animation-element bounce-up completion_text"> You have just travelled to six of some of </br> St. Louis' best and least known art works, totalling over 400 feet in height and located across 23 miles of the city. </br> </br> To see our other tours, click below.</p>
@@ -127,7 +141,14 @@
 		  	 	</div>
 	  		</div>
 
-	  		<div class="end_button animation-element fadeIn" onclick="document.getElementById('modal2').style.display='block'">Complete Tour</a></div>
+
+	  		<div class="bottom_bar">
+		  		<!--Open End Modal-->
+		  		<div class="end_button animation-element fadeIn" onclick="document.getElementById('modal2').style.display='block'">Complete Tour</div>
+		  	</div>
+
+	  	</div>
+	  </div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="scripts/scripts.js"></script>
