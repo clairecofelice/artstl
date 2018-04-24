@@ -550,8 +550,6 @@ iframe {
 }
 
 #read1 {
-  background-color: red;
-  outline-style: none;
   height: auto;
   overflow: hidden;
 }
