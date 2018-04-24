@@ -550,21 +550,29 @@ iframe {
 }
 
 #read1 {
+  border:none;
+  background-color: rgba(0,0,0,0);
   height: auto;
   overflow: hidden;
 }
 
 #read2 {
+  border:none;
+  background-color: rgba(0,0,0,0);
   height: auto;
   overflow: hidden;
 }
 
 #read3 {
+  border:none;
+  background-color: rgba(0,0,0,0);
   height: auto;
   overflow: hidden;
 }
 
 #read4 {
+  border:none;
+  background-color: rgba(0,0,0,0);
   height: auto;
   overflow: hidden;
 }
