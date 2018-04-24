@@ -138,52 +138,33 @@ $(".close-modal").on('click', function(e){
 
 //tour page scripts
 
-function moreInfo() {
-    var x = document.getElementById("moreInfo");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    document.getElementById("read1").style.opacity = "0";
-    $( ".bodyText" ).addClass( "fadeInTwo" );
-}
+$(document).ready(function(){
+    $("#read1").click(function(){
+        $("#moreInfo").slideToggle();
+         $(this).val("Read Less");
+    });
+});
 
-function moreInfo2() {
-     var x = document.getElementById("moreInfo2");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    document.getElementById("read2").style.height = "0";
-    document.getElementById("read2").style.margin = "0";
-    $( ".bodyText" ).addClass( "fadeInTwo" );
-}
+$(document).ready(function(){
+    $("#read2").click(function(){
+        $("#moreInfo2").slideToggle();
+         $(this).val("Read Less");
+    });
+});
 
-function moreInfo3() {
-     var x = document.getElementById("moreInfo3");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    document.getElementById("read3").style.height = "0";
-    document.getElementById("read3").style.margin = "0";
-    $( ".bodyText" ).addClass( "fadeInTwo" );
-}
+$(document).ready(function(){
+    $("#read3").click(function(){
+        $("#moreInfo3").slideToggle();
+         $(this).val("Read Less");
+    });
+});
 
-function moreInfo4() {
-     var x = document.getElementById("moreInfo4");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    document.getElementById("read4").style.height = "0";
-    document.getElementById("read4").style.margin = "0";
-    $( ".bodyText" ).addClass( "fadeInTwo" );
-}
+$(document).ready(function(){
+    $("#read4").click(function(){
+        $("#moreInfo4").slideToggle();
+         $(this).val("Read Less");
+    });
+});
 
 $(".img1").click(function(){
     $(this).css("opacity", "1");
@@ -191,34 +172,48 @@ $(".img1").click(function(){
 });
 
 
-function closeDrawer() {
-    document.getElementById("moreInfo").style.display = "none";
-    document.getElementById("read1").style.height = "auto";
-    document.getElementById("read1").style.marginTop = "12px";
-}
+//open completion modal
 
-function closeDrawer2() {
-    document.getElementById("moreInfo2").style.display = "none";
-    document.getElementById("read2").style.height = "auto";
-    document.getElementById("read2").style.marginTop = "12px";
-}
+$(".modal2").each( function(){
+    $(this).wrap('<div class="overlay"></div>')
+});
 
-function closeDrawer3() {
-    document.getElementById("moreInfo3").style.display = "none";
-    document.getElementById("read3").style.height = "auto";
-    document.getElementById("read3").style.marginTop = "12px";
-}
+$(".open-modal").on('click', function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation;
+    
+    var $this = $(this),
+            modal = $($this).data("modal2");
+    
+    $(modal).parents(".overlay").addClass("open");
+    setTimeout( function(){
+        $(modal).addClass("open");
+    }, 350);
+    
+    $(document).on('click', function(e){
+        var target = $(e.target);
+        
+        if ($(target).hasClass("overlay")){
+            $(target).find(".modal").each( function(){
+                $(this).removeClass("open");
+            });
+            setTimeout( function(){
+                $(target).removeClass("open");
+            }, 350);
+        }   
+    });   
+});
 
-function closeDrawer4() {
-    document.getElementById("moreInfo4").style.display = "none";
-    document.getElementById("read4").style.height = "auto";
-    document.getElementById("read4").style.marginTop = "12px";
-}
-
-function openNav() {
-    document.getElementById("open_nav").style.display = "block";
-}
-
-function closeNav() {
-    document.getElementById("open_nav").style.display = "none";
-}
+$(".close-modal").on('click', function(e){
+    e.preventDefault();
+    e.stopImmediatePropagation;
+    
+    var $this = $(this),
+            modal = $($this).data("modal2");
+    
+    $(modal).removeClass("open");
+    setTimeout( function(){ 
+        $(modal).parents(".overlay").removeClass("open");
+    }, 350);
+    
+}); 

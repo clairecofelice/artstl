@@ -42,7 +42,7 @@
 
 			<!--Intro Text-->
 			<div class="intro_locations">
-				<p class="welcome_text animation-element fadeIn"> The next stop on our tour is the Apotheosis of St. Louis, one of the city's most recognizable symbols.</p>
+				<p class="welcome_text animation-element fadeIn"> The next stop on our tour is </br>the Apotheosis of St. Louis, one of the city's most recognizable symbols.</p>
 		   	</div>
 
 			<!--Top Navigation Bar-->
@@ -54,20 +54,20 @@
 					<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
 					<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
 					<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
-					<li><a href="arch.html"><img src="icons/dot.svg"></a></li>
+					<li class="last-dot"><a href="arch.html"><img src="icons/dot.svg"></a></li>
 				</ul>
 			</div>
 
 			<!--Quick Facts-->
 	   		<div class="grey_box">
-	   			<div class="locations">
+	   			<div class="grey">
 					<p class="instruction_number animation-element slide-left">00</p>
 		   			<p class="tour_text lInstruction animation-element slide-left">Quick Facts</p>
 	   				<div class="quick_facts">
-						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 27' tall</p>
-						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Design by Charles H Niehaus</p>
-						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1903</p>
-						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from bronze with a granite pedestal</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 27 feet tall</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Designed by Charles Niehaus</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Unveiled in 1906</p>
+						<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from bronze and granite </p>
 					</div>
 				</div>
 			</div>
@@ -76,70 +76,68 @@
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">01</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">As you approach Art Hill,</p>
+		   			<p class="tour_text lInstruction animation-element slide-left">Once at Art Hill,</p>
 					<p class="tour_text rInstruction animation-element slide-right">look up at the museum.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> From its iconic ledge in front of the museum, the statue </p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo()" id="read1"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> However, the statue hasn't always stood in its iconic location. The original plaster model of the statue of the Crusader King, Louis IX of France, stood at the main entrance to the 1904 World’s Fair (where the History Museum now is located). The statue stands as a symbol of Christianity, the Crusading spirit, and the strength and vitality of the City of St. Louis.</p>
-					</div>
 				</div>
+
+				<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> From its iconic ledge in front of the museum, the Apotheosis of St. Louis</p>
+
+				<div id="moreInfo" style="display: none;">
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> appears ready to leap into the air. However, the statue was not always in this location. The original plaster model of the statue of the Crusader King, Louis IX of France, stood at the main entrance to the 1904 World’s Fair (where the Missouri History Museum is now located). After the Fair concluded, the Louisiana Purchase Exposition Company donated a bronze version of the statue to Forest Park as a permanent reminder of the event.</p>
+				</div>
+
+				<input type="button" class="animation-element bounce-up" id="read1" value="Read More"/>
+
 			</div>
 
 			<!--Information Box 2-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">02</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">Imagine that it'</p>
-					<p class="tour_text rInstruction animation-element slide-right">and note their texture.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> The 179-foot tower is made of rusticated limestone, buff-colored brick and terra</p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo2()" id="read2"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo2" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> cotta. Its walls are adorned with carvings of mythical animals and leaf patterns. </p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer2()"></i>
-						</br>
-					</div> 				
+		   			<p class="tour_text lInstruction animation-element slide-left">When you first see the</p>
+					<p class="tour_text rInstruction animation-element slide-right">statue how do you feel?</p>
 				</div>
+
+				<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> The equestrian statue captures Louis IX as a soldier in a manner intended to inspire</p>
+
+
+				<div id="moreInfo2" style="display: none;">
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> awe and respect. His horse appears to move forward while the draperies seem </br> to flutter and his magnificent ermine cape decorated with the symbol of French monarchy, the fleur-de-lis, indicates royalty. The raised sword, held hilt upwards to form a cross, implies his leadership in battle.</p>
+				
+				</div> 				
+
+				<input type="button" class="animation-element bounce-up" id="read2" value="Read More"/>
 			</div>
 
 			<!--Information Box 3-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">03</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">When you're ready,</p>
-					<p class="tour_text rInstruction animation-element slide-right">make your way inside.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> During the World’s Fair in 1904, as many as 5,000 people visited the tower and </p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo3()" id="read3"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo3" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> promenaded in carriages through Reservoir Park. </p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer3()"></i>
-						</br>
-					</div> 				
+		   			<p class="tour_text lInstruction animation-element slide-left">Now, look at the pedestal</p>
+					<p class="tour_text rInstruction animation-element slide-right">and read the inscriptions.</p>
 				</div>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> On the north side of the pedestal are the words, "Presented to the City of St. Louis </p>
+
+
+					<div id="moreInfo3" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> by the Louisiana Purchase Exposition in commemoration of the Universal Exposition of 1904 held on this site." Also inscribed on the pedestal is the line "Designed by C. H. Niehaus," a reference </br>to the original artist, Charles Niehaus, who offered to create a bronze version of the plaster model for a $90,000 commission. However, the company took a lower $37,500 bid from a local artist, W. R. Hodges. In response, Niehaus sued the company for infringement of his intellectual property rights and was awarded $3,000.</p>
+					</div> 	
+					<input type="button" class="animation-element bounce-up" id="read3" value="Read More"/>
 			</div>
 
 			<!--Information Box 4-->
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">04</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">Take your time</p>
-					<p class="tour_text rInstruction animation-element slide-right">as you go up the stairs.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Inside, spiral steps take visitors to the top of the tower where an observation</p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo4()" id="read4"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo4" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> deck under a bell-shaped roof of terra cotta tiles offers a 360-degree view of the City of St. Louis. </p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer4()"></i>
-						</br>
-					</div> 				
+		   			<p class="tour_text lInstruction animation-element slide-left">Do you notice anything</p>
+					<p class="tour_text rInstruction animation-element slide-right">strange about the sword?</p>
 				</div>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> It turns out, the sword St. Louis holds today is not the original. Over the years, </p>
+
+					<div id="moreInfo4" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> his sword has been broken or stolen a number of times. It was replaced in 1970, 1972, 1977 and 1981. Stealing, and later returning, the sword was considered a rite of passage for students in the engineering program at nearby Washington University. </p>
+					</div> 				
+					<input type="button" class="animation-element bounce-up" id="read4" value="Read More"/>
 			</div>
 
 		

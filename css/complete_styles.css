@@ -4,7 +4,6 @@ body {
 	margin: 0;
 	background-color: #F8F9F9;
 
-	background-image: url(apotheosis_of_st_louis.jpg);
 	background-size: 100vw 100vh;
 	background-repeat: no-repeat;
 }
@@ -499,7 +498,6 @@ iframe {
 }
 
 .completion_box {
-	text-align: center;
 	position: relative;
 	background-color: #F8F9F9;
 	width: 70vw;

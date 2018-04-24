@@ -33,12 +33,12 @@
 	  	</div>
 
 		<div class="body_text">
-			<h2>Eero Saarinen</h2>
-			<h1>The Gateway Arch</h1>
+			<h2 class="one_line_header">(Don't) Look Up</h2>
+			<h1 class="one_line_header2">The Gateway Arch</h1>
 			<h2>Stop 6 of 6</h2>
 
 			<div class="intro_locations">
-				<p class="welcome_text animation-element fadeIn"> Welcome to the Compton Hill Water Tower, the newest of St. Louis' three towers.</p>
+				<p class="welcome_text animation-element fadeIn"> The last stop on our tour is </br> the Gateway Arch, the tallest </br> man-made monument in the Western Hemisphere and the symbol of St. Louis.</p>
 		   	</div>
 
 
@@ -50,19 +50,19 @@
 				<li><a href="school_bus.html"><img src="icons/dot.svg"></a></li>
 				<li><a href="footnote.html"><img src="icons/dot.svg"></a></li>
 				<li><a href="treemonisha.html"><img src="icons/dot.svg"></a></li>
-				<li><a href="arch.html"><img src="icons/active_dot.svg"></a></li>
+				<li class="last-dot"><a href="arch.html"><img src="icons/active_dot.svg"></a></li>
 			</ul>
 		
 		</div>
 
 	   		<div class="grey_box">
-	   			<div class="locations">
+	   			<div class="grey">
 					<p class="instruction_number animation-element slide-left">00</p>
 		   				<p class="tour_text lInstruction animation-element slide-left">Quick Facts</p>
 		   				<div class="quick_facts">
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 27' tall</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1903</p>
-							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from bronze with a granite pedestal</p>
+							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> 630 feet tall</p>
+							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Completed in 1965</p>
+							<p class="tour_text animation-element qbounce-up"> <i class="fas fa-caret-right"></i> Made from stainless steel</p>
 					</div>
 				</div>
 			</div>
@@ -70,11 +70,11 @@
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">01</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">Before you enter,</p>
-					<p class="tour_text rInstruction animation-element slide-right">walk around the tower.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Built on the 36 acre Reservoir Park, it was completed in 1898 after a design by</p>
+		   			<p class="tour_text lInstruction animation-element slide-left">From miles away</p>
+					<p class="tour_text rInstruction animation-element slide-right">you can see the arch.</p>
+				</div>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> At six hundred and thirty feet tall, the Gateway Arch is the tallest man-made</p>
 
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo()" id="read1"> Read More <i class="fas fa-caret-down"></i> </p>
 
 					<div class="info_drawer" id="moreInfo" style="display: none;">
 						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Harvey Ellis at a cost of $48,000. Ellis was a nationally-known architect who designed St. Louis City Hall and the Washington Terrace Gatehouse, among many other commissions. </p>
@@ -82,65 +82,65 @@
 							<img src="img/tour_one/water_construction.jpg" class="img img1">
 						</div>
 						<p class="caption_text" id="caption1">The tower under scaffolding during intial construction, 1898.</p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer()"></i>
-						</br>
-					</div> 				
-				</div>
+					</div> 		
+					<input type="button" class="animation-element bounce-up" id="read1" value="Read More"/>
 			</div>
 
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">02</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">Approach the walls</p>
-					<p class="tour_text rInstruction animation-element slide-right">and note their texture.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> The 179-foot tower is made of rusticated limestone, buff-colored brick and terra</p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo2()" id="read2"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo2" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> cotta. Its walls are adorned with carvings of mythical animals and leaf patterns. </p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer2()"></i>
-						</br>
-					</div> 				
+		   			<p class="tour_text lInstruction animation-element slide-left">You may wonder why</p>
+					<p class="tour_text rInstruction animation-element slide-right">the arch was built at all.</p>
 				</div>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> In a project that began in 1933, civic leaders set out to accomplish two goals:</p>
+
+					<div id ="moreInfo2" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> to have the</p>
+					</div> 	
+					<input type="button" class="animation-element bounce-up" id="read2" value="Read More"/>
 			</div>
 
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">03</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">When you're ready,</p>
-					<p class="tour_text rInstruction animation-element slide-right">make your way inside.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> During the World’s Fair in 1904, as many as 5,000 people visited the tower and </p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo3()" id="read3"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo3" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> promenaded in carriages through Reservoir Park. </p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer3()"></i>
-						</br>
-					</div> 				
+		   			<p class="tour_text lInstruction animation-element slide-left">Look up.</p>
+					<p class="tour_text rInstruction animation-element slide-right">Do you see it sway?</p>
 				</div>
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Built in the form of a weighted catenary arch and resistant to earthquakes, the  </p>
+
+					<div id="moreInfo3" style="display: none;">
+						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> Arch is built </p>
+					</div> 				
+				<input type="button" class="animation-element bounce-up" id="read3" value="Read More"/>
 			</div>
 
 			<div class="locations">
 		   		<p class="instruction_number animation-element slide-left">04</p>
 		   		<div class="instruction_container">
-		   			<p class="tour_text lInstruction animation-element slide-left">Take your time</p>
-					<p class="tour_text rInstruction animation-element slide-right">as you go up the stairs.</p>
-					<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;"> Inside, spiral steps take visitors to the top of the tower where an observation</p>
-
-					<p class="get_more_info animation-element bounce-up" onclick="moreInfo4()" id="read4"> Read More <i class="fas fa-caret-down"></i> </p>
-
-					<div class="info_drawer" id="moreInfo4" style="display: none;">
-						<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> deck under a bell-shaped roof of terra cotta tiles offers a 360-degree view of the City of St. Louis. </p>
-						<i class="fas fa-caret-up caret" onclick="closeDrawer4()"></i>
-						</br>
-					</div> 				
+		   			<p class="tour_text lInstruction animation-element slide-left">Approach the base </p>
+					<p class="tour_text rInstruction animation-element slide-right">and note its material.</p>
 				</div>
+				
+				<p class="tour_text bodyText animation-element bounce-up" style="margin-bottom: 0;">  Each wall consists of a stainless steel skin covering a sandwich of two carbon-steel</p>
+
+
+				<div id="moreInfo4" style="display: none;">
+					<p class="tour_text bodyText animation-element bounce-up" style="margin-top: 2px;"> deck under a bell-shaped roof of terra cotta tiles offers a 360-degree view of the City of St. Louis. </p>
+				
+				</div> 	
+				<input type="button" class="animation-element bounce-up" id="read4" value="Read More"/>			
 			</div>
 
+			<div id="modal2" class="modal2 animate-opacity" onclick="document.getElementById('modal2').style.display='none'">
+		    	<div class="modal-content2">
+					<p class="completion_header animation-element slide-left">Congratulations</p>
+					<p class="animation-element bounce-up completion_text"> You have just travelled to six of some of </br> St. Louis' best and least known art works, totalling over 400 feet in height and located across 23 miles of the city. </br> </br> To see our other tours, click below.</p>
 
-			<div class="end_button animation-element fadeIn"><a href="tour_one_complete.html">Complete Tour</a></div>
+					<div class="complete_button"><a href="index.html">Return Home</a></div>
+		  	 	</div>
+	  		</div>
+
+	  		<div class="end_button animation-element fadeIn" onclick="document.getElementById('modal2').style.display='block'">Complete Tour</a></div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 		<script src="scripts/scripts.js"></script>

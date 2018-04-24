@@ -24,6 +24,8 @@ ul {
   background-color: #F8F9F9;
   color: #EAECEE;
   overflow: visible;
+
+  text-align: center;
 }
 
 #tour {
@@ -58,7 +60,11 @@ ul {
   position: absolute;
   top: 0vw;
   width: 49vw;
-  left: 24vw;
+  /*left: 24vw;*/
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; 
 }
 
 #rightLine {
@@ -71,9 +77,12 @@ ul {
 .centered_nav_elements {
 	position: absolute;
 	top: 1.5vw;
-	left: 23.5vw;
-	width: auto;
+	width: 100vw;
 	height: 3vh;
 	margin: 0 auto;
 	margin-bottom: 1vh;
+}
+
+.last-dot {
+  margin-right: 0 !important;
 }

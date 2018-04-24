@@ -1,11 +1,9 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #4D5656;
-
-	max-width: 414px;
-	min-width: 320px;
 	margin: 0;
 	background-color: #F8F9F9;
+  overflow-x: hidden;
 }
 
 /*Artwork Name*/
@@ -16,7 +14,7 @@ h1 {
   text-align: center;
 
   margin-top: 0px;
-  margin-bottom: 0.5vh;
+  margin-bottom: 3vh;
 
   animation: fadeIn 3s;
 }
@@ -48,12 +46,18 @@ p {
 	font-size: 15px;
 	line-height: 20px;
 	font-weight: 100;
+  margin-bottom: 0;
 }
 
 a {
   color: black;
   z-index: 100;
   text-decoration: none;
+}
+
+iframe {
+  border-style: none;
+  padding: 0;
 }
 
 .welcome_text {
@@ -67,8 +71,8 @@ a {
 
 .exit {
   position: fixed;
-  top: 1vh;
-  right: 1vh;
+  top: 2vh;
+  right: 2vh;
   z-index: 1000;
 } 
 
@@ -84,8 +88,8 @@ a {
   text-transform: uppercase;
 
   position: fixed; 
-  top: 1vh;
-  left: 1vh;
+  top: 2vh;
+  left: 2vh;
   z-index: 100;
 
   padding: 1.5vw;
@@ -115,6 +119,7 @@ a {
   position: relative;
   top: 80vh;
   z-index: 1000;
+
 }
 
 .intro_locations {
@@ -128,6 +133,15 @@ a {
 	width: 75vw;
 	margin-left: auto;
 	margin-right: auto;
+  margin-bottom: 15vh;
+  height: auto;
+}
+
+.grey {
+  padding-top: 4vh;
+  width: 75vw;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
 }
 
@@ -155,11 +169,20 @@ a {
 	opacity: 0;
 }
 
+.bottom_tour_text {
+  opacity: 0;
+  margin-top: 0;
+  margin-bottom: 2vh;
+}
+
 .instruction_container {
-  position: relative;
-  left: -5px;
-  margin-bottom: 15vh;
+  margin-left: 0;
+  margin-right: 0;
   overflow: hidden;
+  position: relative;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  height: 90px;
 }
 
 .lInstruction {
@@ -168,7 +191,7 @@ a {
   margin-bottom: 15px;
   top: 1vh;
   left: 0;
-	font-size: 26px;
+	font-size: 23px;
 	font-weight: 700;
 }
 
@@ -177,25 +200,8 @@ a {
   display: block;
   margin-top: 0;
   left: 0;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 700;
-}
-
-.get_more_info {
-  font-size: 12px;
-  text-decoration: underline;
-}
-
-.info_drawer {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.bodyVisible {
-  padding-left: 5px;
-  position: absolute;
-  top: 0;
 }
 
 .open_drawer {
@@ -216,8 +222,7 @@ a {
 }
 
 .quick_facts {
-  margin-top: 5vh;
-  margin-bottom: 5vh;
+  margin-bottom: 6vh;
   overflow: hidden;
 }
 
@@ -321,6 +326,8 @@ a {
   transform: translate3d(0px, 0px, 0px);
 }
 
+
+
 #popup {
 	font-weight: 400;
 	color: black;
@@ -349,9 +356,51 @@ a {
   width: 70vw; /* Could be more or less, depending on screen size */
 }
 
-.caption_text {
+.modal2 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+}
+
+.modal-content2 {
+  overflow: hidden;
   position: absolute;
-  bottom: 1vh;
+  background-color: #fefefe;
+  left: 5vw;
+  top: 25vh;
+  padding: 5vh;
+  width: 70vw;
+  height: 70vw;
+}
+
+.complete_button {
+  color: #4D5656;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+  position: absolute; 
+  bottom: 5vh;
+  left: 30vw;
+  z-index: 1000;
+
+  padding: 1.5vw;
+
+  border: 1px solid #4D5656; 
+  border-radius: 5px;
+}
+
+.caption_text {
+  position: relative;
+  margin-top: 1vh;
+  bottom: 0vh;
 	font-size: 11px;
 	font-weight: 100;
 	line-height: 14px;
@@ -376,14 +425,19 @@ a {
   font-size: 12px;
   font-weight: 500;
   text-align: center;
+  margin-bottom: 1.5vh;
 }
 
 .next {
 	width: 100vw;
+  height: 33vh;
+  margin: 0;
+  bottom: 0;
 	position: relative;
 }
 
 .next_prev {
+  bottom: 0;
 	width: 100vw;
 	height: 33vh;
 	filter: grayscale(100%) contrast(60%);
@@ -399,7 +453,7 @@ a {
 
   width: 80vw;
 	position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 100;
@@ -409,6 +463,7 @@ a {
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .modal {
@@ -453,9 +508,9 @@ a {
   margin-top: 2vh;
   margin-bottom: 1vh;
   -webkit-animation: slideLeft 2s forwards;
-  -webkit-animation-delay: 1s;
+  -webkit-animation-delay: 2s;
   animation: slideLeft 2s forwards;
-  animation-delay: 1s;
+  animation-delay: 0.5s;
 }
 
 .caret {
@@ -471,11 +526,19 @@ a {
   overflow: hidden;
 }
 
-.img_wrapper {
+.img_wrapper_long {
     position: relative;
     overflow: hidden;
     width: auto;
     height: 400px; 
+}
+
+.img_wrapper_short {
+  margin-top: 2vh;
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    height: 200px; 
 }
 
 @-webkit-keyframes slideLeft {
@@ -487,28 +550,25 @@ a {
 }
 
 #read1 {
-  opacity: 1;
   height: auto;
   overflow: hidden;
 }
 
 #read2 {
-  opacity: 1;
   height: auto;
   overflow: hidden;
 }
 
 #read3 {
-  opacity: 1;
   height: auto;
   overflow: hidden;
 }
 
 #read4 {
-  opacity: 1;
   height: auto;
   overflow: hidden;
 }
+
 
 @keyframes fadeInTwo {
   0%   { opacity: 0.4; }
@@ -562,5 +622,42 @@ a {
 
 #moreInfo {
   position: relative;
-  top: -45px;
+}
+
+.completion_header {
+  font-family: 'Playfair Display', serif;
+  display: block;
+  margin-bottom: 0.5vh;
+  top: 0.5vh;
+  left: 0;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.completion_text {
+  margin-top: 5vh;
+  opacity: 1;
+}
+
+#read1.in-view, #read2.in-view, #read3.in-view, #read4.in-view {
+  opacity: 1;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  margin-top: 2vh;
+
+  font-size: 12px;
+  text-decoration: underline;
+  font-weight: 200;
+}
+
+.one_line_header {
+  margin-top: 3vh;
+}
+
+.one_line_header2 {
+  margin-top: 2.5vh;
+  margin-bottom: 4.5vh;
 }
