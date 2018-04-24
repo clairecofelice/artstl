@@ -551,7 +551,7 @@ iframe {
 
 #read1 {
   background-color: red;
-  outline: none;
+  outline-style: none;
   height: auto;
   overflow: hidden;
 }
