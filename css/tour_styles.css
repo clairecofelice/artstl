@@ -584,7 +584,7 @@ iframe {
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
-  width: 33vw;
+  width: 30vw;
   z-index: 100;
 
   margin: 0 auto;
@@ -651,6 +651,11 @@ input {
   font-size: 12px;
   text-decoration: underline;
   font-weight: 200;
+}
+
+input[type=button] {
+  background-color: none;
+  outline: none;
 }
 
 .one_line_header {
